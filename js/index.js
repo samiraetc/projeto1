@@ -47,6 +47,7 @@ function initMap() {
             map: map
         })
 
+        
         // cria o card para mostrar as informaçoes do estabelecimento
         let newContent = 
         `<div id="infos"> 
