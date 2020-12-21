@@ -74,12 +74,12 @@ function initMap() {
 
 function showImages() {
     // Necessário declarar a variável img 
-    var img = ["/app/assets/images/seorosa.jpg", 
-    "/app/assets/images/saobento.jpg", 
-    "/app/assets/images/candreva.jpg",
-    "/app/assets/images/pinkelephant.jpg",
-    "/app/assets/images/pub.jpg",
-    "/app/assets/images/club88.webp"];
+    var img = ["assets/images/seorosa.jpg", 
+    "assets/images/saobento.jpg", 
+    "assets/images/candreva.jpg",
+    "assets/images/pinkelephant.jpg",
+    "assets/images/pub.jpg",
+    "assets/images/club88.webp"];
     var aleatorio1 = Math.floor(Math.random() * img.length);
     var aleatorio2 = Math.floor(Math.random() * img.length);
     var aleatorio3 = Math.floor(Math.random() * img.length);
