@@ -55,7 +55,7 @@ function initMap() {
             ${props.endereco.cidade} - ${props.endereco.uf} </br>
             ${props.endereco.cep} </p>
             <p>${props.telefone}</p>
-            <a href="${props.instagram}"><img src="/app/assets/instagram.png" id="instagram" alt=""></a>
+            <a href="${props.instagram}"><img src="assets/instagram.png" id="instagram" alt=""></a>
         </div>`
 
         if (props.nome) {

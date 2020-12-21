@@ -86,7 +86,9 @@ body {
 
 #imgDestaque {
     padding: 15px;
-    width: 98%;
+        width: 330px;
+        height: 200px;
+
 }
 
 .destaque  li {
@@ -293,7 +295,3 @@ ul {
     width: 25px;
 }
 
-#imgDestaque {
-    width: 330px;
-    height: 200px;
-}
