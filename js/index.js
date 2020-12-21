@@ -127,7 +127,7 @@ function search() {
             ${markers[y].endereco.cidade} - ${markers[y].endereco.uf} </br>
             ${markers[y].endereco.cep} </p>
             <p>${markers[y].telefone}</p>
-            <a href="${markers[y].instagram}"><img src="/app/assets/instagram.png" id="instagram" alt=""></a>
+            <a href="${markers[y].instagram}"><img src="assets/instagram.png" id="instagram" alt=""></a>
         </div>` // crio o card que vai exibir no html
 
         resultados = resultados + cardResultados; // envio o html para resultados e concateno
