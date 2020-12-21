@@ -1,0 +1,163 @@
+[
+    {
+        "nome": "Boteco Vidottinho",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/botecovidottinho/",
+        "telefone": "+55 19 3325-8882",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro" ],
+        "latitude": -22.8968,
+        "longitude": -47.0511,
+        "endereco": {
+            "rua": "R. Dr. Emílio Ribas, 887",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-142"
+        }
+    },
+    {
+        "nome": "The Lord's Pub",
+        "categoria": "Pub",
+        "instagram": "https://www.instagram.com/thelordspuboficial/",
+        "telefone": "+55 19 3325-8882",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude": -22.896007,
+        "longitude": -47.0500808,
+        "endereco": {
+            "rua": "R. Américo Brasiliense, 350",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-230"
+        }
+    },
+    {
+        "nome": "Clube 88",
+        "categoria": "Balada",
+        "instagram": "https://www.instagram.com/club88oficial/",
+        "telefone": "+55 19 3326-7790",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude":  -22.9028038,
+        "longitude": -47.0593757,
+        "endereco": {
+            "rua": "Av. Dr. Thomaz Alves, 39",
+            "bairro": "Centro",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13010-170"
+        }
+    },
+    {
+        "nome": "Boteco São Bento Cambuí",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/boteco_saobento/",
+        "telefone": "+55 19 3259-1674",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude":  -22.8990341,
+        "longitude": -47.0507017,
+        "endereco": {
+            "rua": "R. Dr. Emílio Ribas, 619",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-141"
+        }
+    },
+    {
+        "nome": "Deck 21",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/deck21cambui/",
+        "telefone": "+55 19 2511-2523",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude":  -22.8988153,
+        "longitude": -47.0494267,
+        "endereco": {
+            "rua": "R. Padre Almeida, 260",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-251"
+        }
+    },
+    {
+        "nome": "Catedral do Chopp",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/catedraldochopp/",
+        "telefone": "+55 19 3295-0110",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude":  -22.905414,
+        "longitude": -47.047295,
+        "endereco": {
+            "rua": "Rua Coronel Francisco Andrade Coutinho, 299",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-190"
+        }
+    },
+    {
+        "nome": "Bar Candreva",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/candrevabar/",
+        "telefone": "+55 19 3232-7361",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude": -22.917208,
+        "longitude": -47.0496642,
+        "endereco": {
+            "rua": "Av. Monte Castelo, 23",
+            "bairro": "Jardim Proença",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13026-240"
+        }
+    },
+    {
+        "nome": "Capela Bar",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/capelabarcampinas/",
+        "telefone": "+55 19 3255-1140",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude": -22.906415,
+        "longitude": -47.038985,
+        "endereco": {
+            "rua": "Av. Dr. Moraes Sales, 2662",
+            "bairro": "Nova Campinas",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13092-111"
+        }
+    },
+    {
+        "nome": "Bar da Arvore",
+        "categoria": "Bares",
+        "instagram": "https://www.instagram.com/bar_da_arvore/",
+        "telefone": "+55 19 98605-4643",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude": -22.937002,
+        "longitude": -47.058788,
+        "endereco": {
+            "rua": "Rua São Miguel Arcanjo, 1265",
+            "bairro": "Jardim Nova Campinas",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13040-061"
+        }
+    },
+    {
+        "nome": "Pink Elephant",
+        "categoria": "Balada",
+        "instagram": "https://www.instagram.com/pinkelephant/",
+        "telefone": "+55 19 98207-8961",
+        "pagamento": ["Cartao de Credito", "Cartao de Debito", "Dinheiro"],
+        "latitude": -22.89897,
+        "longitude": -47.050098,
+        "endereco": {
+            "rua": "Rua Sampainho, 282",
+            "bairro": "Cambuí",
+            "cidade": "Campinas",
+            "uf": "SP",
+            "cep": "13025-300"
+        }
+    }
+
+]

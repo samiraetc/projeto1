@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/styles/global.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="/app/js/index.js" type="text/javascript"> </script>
+  
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDvqsyDaQ6B-Kf49kqZVJ26LryragpWpI&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="container">
+            <div class="containerMenu">
+                <div class="menu">
+                    <a href="#home">Home</a>
+                    <a href="#faleconosco">Fale Conosco</a>
+                    <a href="#sobrenos">Sobre Nós</a>
+                </div>
+                <div class="divSearch">
+                        <input type="text" id="txtBusca" class="search" placeholder="O que você está procurando?" />
+                        <img src="/app/assets/images/search.svg" id="btnBusca" alt="Buscar" onclick="search()"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultado" id="cardBusca" style=" display: none" >
+            <div class="options">
+                <h2>Resultados encontrados</h2>
+               
+            <button id="btnClose"  onclick="fechar()">X</button>
+            </div>
+           <div id="buscad" class="resultadobusca"></div>
+        </div>
+
+        <div class="destaque">
+            <li id="imagem1"></li>
+            <li id="imagem2"></li>
+            <li id="imagem3"></li>
+        </div>
+
+        <div class="favoritos">
+
+        </div>
+
+        <div class="mapa">
+            <div class="map" id="map"></div>
+        </div>
+
+        <div class="sobrenos">
+            
+        </div>
+
+        <div class="mapa" id="faleconosco">
+            <h2 id="titulocontato">Entre em contato conosco</h2>
+            <form>
+
+                <div class="dados_contato">
+                    <input placeholder="nome" id="nome"/>
+                    <input placeholder="telefone" id="telefone" />
+                    <input placeholder="email" type="email" id="email" />
+                    <textarea placeholder="mensagem"></textarea>
+                    <button  id="btnEnviar" class="enviar" >Entrar em contato</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="sobre" id="sobrenos">
+            <h1>Sobre o projeto</h1>
+
+            <p>Sistema desenvolvido com objetivo de listar 10 bares e baladas 
+                de Campinas / SP. </p>
+
+             <p>  O Sistema foi criado para avaliação na disciplina de 
+                Desenvolvimento Web, ministrado pelo prof. Andre Luis <br />no 
+                IFSP - Instituto Federal de São Paulo.
+            </p>
+
+
+            <h1>Autores</h1>
+            <div class="autores">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHlbtkhUSwGQ/profile-displayphoto-shrink_400_400/0/1596808189619?e=1613606400&v=beta&t=GMBFZc2DJZOtWaY9sgajyBTvVTLaWbs7wgDwPKn8FM4" id="imagem" alt="foto samira">
+                <div class="dados"> 
+                    <h2 id="nome_autor">Samira Costa</h2>
+                    <h5 id="trabalho_autor">Frontend Developer em Mercado Livre</h5>
+                    <h5 id="email_autor">samira.costa@aluno.ifsp.edu.br</h5>
+                    <h5 id="telefone_autor">+55 34 99767 4843</h5>
+                    <ul>
+                        <li > <a  href="https://www.linkedin.com/in/samira-costa/"><img src="/app/assets/linkedin.png" id="linkedin" alt=""></a></li>
+                        
+                    </ul>
+    </div>
+                
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+<footer>
+    <div class="principal">
+        <div class="footer">
+            <p>2020 desenvolvido por Samira Costa 
+            </p>
+        </div>
+    </div>
+</footer>
+</html>

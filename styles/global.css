@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.container {
+    padding: 15px;
+    background-color:white;
+    border-radius: 15px    
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f1f3f4;
+    margin: 3% 15% 5% 15%
+}
+
+/* INICIO MENU */
+
+.containerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu {
+    width: 80%;
+    padding: 0px 0px 15px 0;
+    text-align: center;
+}
+
+.menu a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #57B3FF;
+}
+/* FIM BLOCO DO MENU */
+
+/* INICIO BLOCO DE PESQUISA */
+
+.divSearch {
+    padding: 5px;
+    background-color:#FAFAFA;
+    border: solid 1px #57B3FF;
+    border-radius: 15px;
+    width: 80%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width: 95%;
+    text-align: center;
+    color: black;
+    
+  }
+
+
+#btnBusca{
+      width: 25px;
+      height: 25px;
+      align-items: center;
+}
+
+/* FIM BLOCO DE PESQUISA */
+
+/* INICIO DESTAQUE */
+
+.destaque {
+    padding: 10px 30px 0px 15px;
+    background-color:white;
+    border-radius: 15px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#imgDestaque {
+    padding: 15px;
+    width: 98%;
+}
+
+.destaque  li {
+    list-style-type: none;
+}
+
+/* FIM DESTAQUE */
+
+
+/* INICIO MAPA */
+
+.mapa {
+   padding: 30px;
+    background-color:white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+
+}
+
+/* FIM MAPA */
+
+.map {
+    height: 400px;
+    width: 100%;
+}
+
+.footer {
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*CONTATO */
+
+#btnEnviar {
+    padding: 15px;
+    width: 101%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    margin-left: 15px;
+    border: none;
+}
+
+.enviar {
+    background-color: #F8526E;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dados_contato input, textarea{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid lightgray;
+   
+}
+
+#faleconosco {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+ #titulocontato  {
+    font-size: 30px;
+    color: #F8526E;
+}
+
+/*CONTATO */
+
+.resultado {
+    padding: 30px;
+    background-color:white;
+    border-radius: 15px;
+
+    margin-top: 10px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+
+}
+
+#btnClose {
+    padding: 5px;
+    width: 7%;
+    height: 40%;
+    border-radius: 50px;
+
+    border: none;
+
+    background-color: #F8526E;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.resultado h2 {
+    color: #F8526E;
+    font-size: 30px;
+    padding: 0 0 0 20px;
+
+   
+   
+}
+.resultadobusca {
+    padding: 0px 0 0 20px;
+    background-color:white;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.sobre {
+    padding: 30px;
+    background-color:white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.sobre h1 { 
+    font-size: 30px;
+    color: #F8526E;
+    text-align: center;
+}
+.sobre p {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+.autores #imagem {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.autores {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.dados  {
+    text-align: center;
+    margin: 0;
+    padding:  0;
+}
+
+#imagem {
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+
+#nome_autor {
+    font-size: 25px;
+    margin: 2px;
+    margin-left: 10px;
+}
+
+#email_autor, #telefone_autor, #trabalho_autor {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+#trabalho_autor {
+    font-size: 18px;
+}
+
+#email_autor, #telefone_autor {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+#linkedin {
+    width: 32px;
+    margin-left: -10px;
+}
+
+#instagram {
+    width: 25px;
+}
+
+#imgDestaque {
+    width: 330px;
+    height: 200px;
+}
