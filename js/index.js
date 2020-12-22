@@ -156,20 +156,20 @@ function salvafavorito() {
     
         if ( markers[y].nome.includes(busca)) {
             var jsonAux = JSON.stringify(markers[y]);
-            window.localStorage.setItem('nomeLocal', jsonAux);
-        
+            window.localStorage.setItem(markers[y].nome, jsonAux);   
+            
         }
-   
     }
 
 }
 
 function showfavoritos() {
-    var jsonTarefa = window.localStorage.getItem('nomeLocal');
-
-    var props = JSON.parse(jsonTarefa);
-
-    cardResultados  = `<div id="infos"> 
+   
+    let jsonTarefa = window.localStorage.getItem('Bar Candreva');
+    
+    let props = JSON.parse(jsonTarefa);
+        
+     cardResultados  = `<div id="infos"> 
     <h3 style={font-size: 10px}> ${props.nome}</h3> 
     <p> ${props.endereco.rua} - ${props.endereco.bairro} <br/ >
     ${props.endereco.cidade} - ${props.endereco.uf} </br>
@@ -178,6 +178,8 @@ function showfavoritos() {
     <a href="${props.instagram}"><img src="assets/instagram.png" id="instagram" alt=""></a>
 </div>`
 
-    document.getElementById('favoritos').style = {display: 'block'}; //mostro a div que estava escondido
+
     document.getElementById('favoritos').innerHTML = cardResultados; // pego o resultado do card e envio para div
+
+
 }
