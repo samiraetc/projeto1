@@ -18,6 +18,7 @@
 
        initMap(); // chama a funcao do mapa
        showImages(); //chama a funcao das imagens do destaque
+       showfavoritos();
       
     
     })
@@ -47,7 +48,7 @@ function initMap() {
             map: map
         })
 
-        
+
         // cria o card para mostrar as informaçoes do estabelecimento
         let newContent = 
         `<div id="infos"> 
@@ -72,6 +73,8 @@ function initMap() {
         }
     }
 }
+
+
 
 function showImages() {
     // Necessário declarar a variável img 
@@ -102,13 +105,9 @@ function showImages() {
 }
 
 
-
-
 function search() {
     var busca = document.getElementById('txtBusca').value; // pega o elemento busca no html
    
-   console.log(busca);
-
    var resultados = " "; // variavel criada para pegar os dados do card e colocar na div
     // percorre o array 
     for(var y = 0; y <markers.length; y++){     
@@ -120,8 +119,11 @@ function search() {
         markers[y].categoria.includes(busca)) {
       
             document.getElementById('cardBusca').style = {display: 'block'}; //mostro a div que estava escondido
+
+            let newName = markers[y].nome;
            
-            cardResultados  = `<div id="infos" > 
+            cardResultados  = `<div id="infos">    
+            <img src="assets/images/estrela.svg" id="btnFavorita" alt="Favorito" onclick="salvafavorito()"/>  
             <h3 style={font-size: 10px}> ${markers[y].nome}</h3> 
             <p>Categoria: ${markers[y].categoria}</p>
             <p> ${markers[y].endereco.rua} - ${markers[y].endereco.bairro} <br/ >
@@ -138,19 +140,44 @@ function search() {
         } else {
             document.getElementById('buscad').innerHTML = "Nenhum resultado encontrado";
         }  
-        
     }
-
     document.getElementById('buscad').innerHTML = resultados; // pego o resultado do card e envio para div
-    
-
 }
 
 
 function fechar() {
-
     document.getElementById("cardBusca").style.display = 'none'; 
-
-    console.log("entrou aqui");
 }
 
+
+function salvafavorito() {
+    var busca = document.getElementById('txtBusca').value;
+    for(var y = 0; y < markers.length; y++){  
+    
+        if ( markers[y].nome.includes(busca)) {
+            var jsonAux = JSON.stringify(markers[y]);
+            window.localStorage.setItem('nomeLocal', jsonAux);
+        
+        }
+   
+    }
+
+}
+
+function showfavoritos() {
+    var jsonTarefa = window.localStorage.getItem('nomeLocal');
+
+    var props = JSON.parse(jsonTarefa);
+
+    cardResultados  = `<div id="infos"> 
+    <h3 style={font-size: 10px}> ${props.nome}</h3> 
+    <p> ${props.endereco.rua} - ${props.endereco.bairro} <br/ >
+    ${props.endereco.cidade} - ${props.endereco.uf} </br>
+    ${props.endereco.cep} </p>
+    <p>${props.telefone}</p>
+    <a href="${props.instagram}"><img src="assets/instagram.png" id="instagram" alt=""></a>
+</div>`
+
+    document.getElementById('favoritos').style = {display: 'block'}; //mostro a div que estava escondido
+    document.getElementById('favoritos').innerHTML = cardResultados; // pego o resultado do card e envio para div
+}

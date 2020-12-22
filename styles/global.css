@@ -67,12 +67,20 @@ body {
 #btnBusca{
       width: 25px;
       height: 25px;
-      align-items: center;
+}
+
+#btnFavorita{
+    width: 15px;
+    height: 15px;
 }
 
 /* FIM BLOCO DE PESQUISA */
 
 /* INICIO DESTAQUE */
+
+#info {
+    padding: 200px;
+}
 
 .destaque {
     padding: 10px 30px 0px 15px;
@@ -174,12 +182,20 @@ body {
 
 /*CONTATO */
 
-.resultado {
+.resultado, .favoritos {
     padding: 30px;
     background-color:white;
     border-radius: 15px;
 
     margin-top: 10px;
+}
+
+.favoritos h2 {
+    color: #F8526E;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .options {
